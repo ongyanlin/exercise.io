@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+<title>Exercise!</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="hobbystyles2.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 id = "top">Healthy body, Happy me!</h1>
+  <p>Hi! I'm Yan Lin, and I like exercising :) </p>
+</div>
+
+<ul class="a">
+   <li class = "dropdown a">
+    <a href="mainpage.html" class="dropbtn">Why Exercise?</a>
+    <div class="dropdown-content">
+      <a href="videosofme.html">Videos of Me</a>
+   </div>
+   </li>
+  <li class = "dropdown a">
+    <a href="exerciseathome.html" class="dropbtn">Exercise at Home</a>
+    <div class="dropdown-content">
+      <a href="bodyweight.html">Bodyweight Exercises</a>
+      <a href="hiitpilates.html">HIIT, Pilates</a>
+      <a href="exercisewithweights.html" class="active">Exercise with Weights</a>
+    </div>
+   </li>
+  <li class ="a"><a href="gymworkouts.html">Gym Workouts</a></li>
+  <li class = "dropdown a">
+  <a href="javascript:void(0)" class="dropbtn">How to Get Started?</a>
+  <div class="dropdown-content">
+      <a href="exercisingathome.html">Exercising at Home</a>
+      <a href="index.html">Gymming</a>
+    </div>
+  </li>
+</ul>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>Exercise with Weights</h1>
+	<button onclick="document.getElementById('myImage').src='cartoonweightyes.png'">yes to weights!</button>
+<img id="myImage" src="cartoonweightno.png" style="width:500px">
+<button onclick="document.getElementById('myImage').src='cartoonweightno.png'">no to weights!</button>
+    </div>
+
+    <div class="card">
+<h2>What is exercising with weights?</h2>
+<p>Exercising with weights means to incorporate weights like dumbbells, barbells and kettlebells into your exercise regime. You can use free-weights or machine weights. Free-weights include dumbbell and kettlebells while machine weights include equipment like the chest fly machine, lat pull-down machine, and leg press machine.</p>
+
+<!--HERE-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="machineweight1.jpg" style="width:100%">
+    <div class="text">machine weight,leg curl machine</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="machineweight2.jpg" style="width:100%">
+    <div class="text">machine weight, leg press</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="freeweight1.jpg" style="width:100%">
+    <div class="text">free weight, barbell</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="freeweight2.jpg" style="width:100%">
+    <div class="text">free weight, kettlebell</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="freeweight3.jpg" style="width:100%">
+    <div class="text">free weight, dumbbell</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--HERE-->
+    </div>
+
+
+<div class="card">
+  <h2>Why exercise with weights?</h2>
+      <p> The principle of progression says that as your body adapts to your fitness routine you have to challenge yourself to keep seeing progress. Eventually, I found Pamela Reif's workouts manageable and wanted more kick to my exercise routine so that I could grow stronger. Hence, I started exercising with weights. </p>
+<p> Exercising with weights helps to build your strength and muscle definition. According to <a href="https://www.verywellfit.com/progression-definition-3120367">Verywell Fit</a>,</p>
+<blockquote cite="https://www.verywellfit.com/progression-definition-3120367">
+The only way your body physically changes and grows is if the muscles are taxed to the point where they must grow stronger to lift that weight. When the muscle fibers are taxed in this manner, it causes micro-tears in the fibers. When you rest, these repair themselves and grow back stronger than before. The overload process causes the muscle fibers to grow stronger (and sometimes bigger) in order to handle the additional weight.
+</blockquote>
+<p>If you want to grow stronger and look more toned, exercising with weights are the way to go!</p>
+</div>
+
+<div class="card">
+  <h2>What are some exercises I can follow?</h2>
+<p> You can start off by using household items like 1.5L water bottles, bleaching lotion bottles, or books as free weights at home! But do take precaution when you use these free weights, as they may feel heavy if you are a beginner. Take care and don't injure yourself!</p>
+<iframe src="https://www.youtube.com/embed/SrRhovjzpSs" width="420" height="315">
+</iframe>
+</div>
+
+  </div>
+
+<div class="row">
+    <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="me.jpeg" style="height:200px; alt="me">
+      <p>I was in Track and Field (sprints) for 4.5 years! However, I had to leave track to focus on my studies during A levels. Track trainings have helped me to foster my interest for exercising! I am happy to pick up this interest for exercising once again in University. </p>
+    </div>
+    <div class="card">
+      <h3>Contact Me</h3>
+	<p>Click on the icons to drop me a message! I am always up for a chat about exercising &#127939; &#8205; </p>
+	<a href="https://www.instagram.com/notdazed/?hl=en"><img src="instagram.jpeg" alt="instagram" style="width:42px;height:42px;"></a>
+	<a href="mailto:ongyanlin2001@gmail.com?subject=Hello"><img src="gmail.png" alt="gmail" style="width:42px;height:42px;"></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="#top">Back to Top</a>
+</div>
+
+</body>
+</html>
